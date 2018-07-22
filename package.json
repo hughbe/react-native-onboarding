@@ -1,0 +1,34 @@
+{
+  "name": "react-native-onboarding-screen",
+  "version": "1.0.0",
+  "description": "Onboarding screen for React Native.",
+  "main": "src/Onboarding.js",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "onboarding",
+    "react-onboarding"
+  ],
+  "author": {
+    "name": "Hugh Bellamy",
+    "email": "hughbellars@gmail.com"
+  },
+  "homepage": "https://github.com/hughbe/react-native-onboarding",
+  "bugs": {
+    "url": "https://github.com/hughbe/react-native-onboarding/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughbe/react-native-onboarding.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react-native-page-control": "^1.1.1"
+  },
+  "peerDependencies": {
+    "react": "^16.4.1",
+    "react-native": "^0.56.0"
+  }
+}
