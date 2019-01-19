@@ -1,6 +1,6 @@
 {
   "name": "react-native-onboarding-screen",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Onboarding screen for React Native.",
   "main": "src/Onboarding.js",
   "keywords": [
@@ -24,11 +24,12 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@babel/runtime": "^7.2.0",
     "prop-types": "^15.6.2",
     "react-native-page-control": "^1.1.1"
   },
   "peerDependencies": {
-    "react": "^16.4.1",
-    "react-native": "^0.56.0"
+    "react": "^16.5.0",
+    "react-native": "^0.57.0"
   }
 }

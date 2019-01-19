@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Dimensions, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const OnboardingPage = ({ page, index, onActionPressed }) => (
     <View style={onboardingPageStyles.contentContainer}>
@@ -30,14 +30,28 @@ const onboardingPageStyles = StyleSheet.create({
     },
     introduction: {
         fontSize: 40,
-        fontFamily: 'Helvetica-Light',
+        ...Platform.select({
+            ios: {
+                fontFamily: 'Helvetica-Light'
+            },
+            android: {
+                fontWeight: '300'
+            }
+        }),
         color: '#fff',
         marginBottom: 20,
         textAlign: 'center'
     },
     introductoryText: {
         fontSize: 28,
-        fontFamily: 'Helvetica-Light',
+        ...Platform.select({
+            ios: {
+                fontFamily: 'Helvetica-Light'
+            },
+            android: {
+                fontWeight: '300'
+            }
+        }),
         color: '#fff',
         textAlign: 'center'
     },
@@ -49,7 +63,14 @@ const onboardingPageStyles = StyleSheet.create({
     },
     action: {
         fontSize: 28,
-        fontFamily: 'Helvetica-Light',
+        ...Platform.select({
+            ios: {
+                fontFamily: 'Helvetica-Light'
+            },
+            android: {
+                fontWeight: '300'
+            }
+        }),
         color: '#fff',
         textAlign: 'center'
     }
